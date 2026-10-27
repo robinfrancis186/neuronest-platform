@@ -1,0 +1,23 @@
+[
+  {
+    "id": "cdc-autism-overview", "title": "CDC: About Autism Spectrum Disorder", "url": "https://www.cdc.gov/autism/about/index.html", "version": "2026-09-07",
+    "keywords": ["autism", "communication", "support", "sensory", "ഓട്ടിസം", "ആശയവിനിമയം", "പിന്തുണ"],
+    "text": {"en": "Autism can affect communication, interaction and patterns of behavior. People's abilities and support needs differ. A person's appearance does not establish whether they are autistic. Discuss developmental concerns with a qualified health professional.", "ml": "ഓട്ടിസം ആശയവിനിമയം, ഇടപെടൽ, പെരുമാറ്റരീതികൾ എന്നിവയെ ബാധിക്കാം. ഓരോരുത്തരുടെയും കഴിവുകളും പിന്തുണയുടെ ആവശ്യങ്ങളും വ്യത്യസ്തമാണ്. രൂപം നോക്കി ഓട്ടിസം തിരിച്ചറിയാൻ കഴിയില്ല. വളർച്ചയെക്കുറിച്ചുള്ള ആശങ്കകൾ യോഗ്യതയുള്ള ആരോഗ്യവിദഗ്ധനുമായി ചർച്ച ചെയ്യുക."},
+    "rights": {"basis": "link_and_original_summary", "reference": "Original short paraphrase linking to the primary public source; no source images or questionnaires copied"},
+    "review": {"status": "pending", "approved_languages": [], "source_checked_at": "2026-09-07", "note": "Engineering source verification only; clinical and Malayalam editorial sign-off required"}
+  },
+  {
+    "id": "cdc-screening-diagnosis", "title": "CDC: Screening and Diagnosing Autism", "url": "https://www.cdc.gov/autism/diagnosis/index.html", "version": "2026-09-07",
+    "keywords": ["screening", "diagnosis", "assessment", "milestones", "development", "concerns", "സ്ക്രീനിംഗ്", "രോഗനിർണയം", "വളർച്ച", "നാഴികക്കല്ലുകൾ"],
+    "text": {"en": "Developmental monitoring, standardized screening and diagnostic assessment are different steps. A screening result alone does not establish an autism diagnosis. Caregivers can record concerns and discuss evaluation with a qualified clinician.", "ml": "വളർച്ച നിരീക്ഷിക്കൽ, മാനദണ്ഡമുള്ള സ്ക്രീനിംഗ്, രോഗനിർണയ വിലയിരുത്തൽ എന്നിവ വ്യത്യസ്ത ഘട്ടങ്ങളാണ്. സ്ക്രീനിംഗ് ഫലം മാത്രം ഓട്ടിസം രോഗനിർണയം സ്ഥാപിക്കുന്നില്ല. രക്ഷിതാക്കൾക്ക് ആശങ്കകൾ രേഖപ്പെടുത്തി യോഗ്യതയുള്ള ഡോക്ടറുമായി വിലയിരുത്തൽ ചർച്ച ചെയ്യാം."},
+    "rights": {"basis": "link_and_original_summary", "reference": "Original short paraphrase; clinical screening questions are not reproduced"},
+    "review": {"status": "pending", "approved_languages": [], "source_checked_at": "2026-09-07", "note": "Clinical and Malayalam editorial sign-off required"}
+  },
+  {
+    "id": "who-caregiver-skills", "title": "WHO: Caregiver Skills Training", "url": "https://www.who.int/publications/i/item/9789240048836", "version": "2026-09-07",
+    "keywords": ["caregiver", "activities", "play", "therapy", "learning", "skills", "parents", "പരിചരണം", "പ്രവർത്തനങ്ങൾ", "കളി", "പഠനം", "കഴിവുകൾ"],
+    "text": {"en": "WHO publishes a caregiver skills training package for families of children aged 2–9 with developmental delays or disabilities. Ask a qualified local service about appropriate support. Reading a summary or watching a video is not equivalent to completing the programme.", "ml": "വളർച്ചാ വൈകല്യമോ താമസമോ ഉള്ള 2–9 വയസ്സുകാരുടെ കുടുംബങ്ങൾക്കായി WHO പരിചരണ നൈപുണ്യ പരിശീലന സാമഗ്രികൾ പ്രസിദ്ധീകരിക്കുന്നു. അനുയോജ്യമായ പിന്തുണയ്ക്കായി യോഗ്യതയുള്ള പ്രാദേശിക സേവനവുമായി ബന്ധപ്പെടുക. സംഗ്രഹം വായിക്കുന്നതോ വീഡിയോ കാണുന്നതോ മുഴുവൻ പരിശീലനത്തിന് തുല്യമല്ല."},
+    "rights": {"basis": "link_and_original_summary", "reference": "Link and original description only; no WHO training materials reproduced"},
+    "review": {"status": "pending", "approved_languages": [], "source_checked_at": "2026-09-07", "note": "Clinical and Malayalam editorial sign-off required"}
+  }
+]

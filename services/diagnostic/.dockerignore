@@ -1,0 +1,13 @@
+.venv
+venv
+__pycache__
+**/__pycache__
+*.pyc
+.env
+.env.*
+artifacts
+models
+data
+fixtures
+*.jsonl
+tests

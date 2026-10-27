@@ -1,0 +1,163 @@
+name: NeuroNest checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+
+# Actions are pinned to a commit, not a tag: a tag can be moved to point at new
+# code, and these jobs handle synthetic credentials and publish the API contract.
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/ruff-action@eaf0ecdd668ceea36159ff9d91882c9795d89b49 # v3.5.1
+        with:
+          version: 0.14.5
+          args: check --output-format github
+      - uses: astral-sh/ruff-action@eaf0ecdd668ceea36159ff9d91882c9795d89b49 # v3.5.1
+        with:
+          version: 0.14.5
+          args: format --check
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - run: npm run check:format
+
+  dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      # A known-vulnerable dependency in a service that handles clinical records
+      # should fail the build, not wait to be noticed.
+      - run: npm ci && npm audit --audit-level=high
+      - run: npm ci && npm audit --audit-level=high
+        working-directory: apps/web
+      - run: npm ci && npm audit --audit-level=high
+        working-directory: apps/mobile
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install pip-audit==2.9.0
+      - run: pip-audit -r services/core/requirements.txt --strict
+      - run: pip-audit -r services/assistant/requirements.lock --strict
+      - run: pip-audit -r services/diagnostic/requirements.lock --strict
+
+  core:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_DB: neuronest
+          POSTGRES_USER: neuronest
+          POSTGRES_PASSWORD: synthetic-ci-only
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U neuronest -d neuronest"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://neuronest:synthetic-ci-only@localhost:5432/neuronest
+      ENVIRONMENT: test
+      DEMO_MODE: "true"
+      DJANGO_SECRET_KEY: synthetic-ci-only-not-a-production-secret
+      ENGINE_SERVICE_TOKEN: synthetic-ci-engine-token-at-least-32-characters
+      IDENTITY_PROVIDER: firebase
+      FIREBASE_PROJECT_ID: neuronest-ci
+      FIREBASE_WEB_API_KEY: firebase-public-ci-placeholder
+      TRUST_PROXY_HEADERS: "false"
+      USERNAME_RATE_LIMIT_HMAC_KEY: synthetic-ci-rate-limit-key
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: services/core/requirements.txt
+      - run: pip install -r services/core/requirements.txt
+      - run: python manage.py check && python manage.py makemigrations --check --dry-run && python manage.py test api --noinput
+        working-directory: services/core
+      - run: python manage.py spectacular --file ../../packages/contracts/openapi.json --format openapi-json
+        working-directory: services/core
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci && npm run check:schema && npm run check:contracts
+
+  ai:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        engine: [assistant, diagnostic]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: services/${{ matrix.engine }}/requirements.lock
+      - run: pip install -r requirements.lock
+        working-directory: services/${{ matrix.engine }}
+      - run: python -m unittest discover -s tests -v
+        working-directory: services/${{ matrix.engine }}
+
+  interfaces:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [web, mobile]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: apps/${{ matrix.app }}/package-lock.json
+      - run: npm ci && npm run typecheck && npm test
+        working-directory: apps/${{ matrix.app }}
+      # Layout drifted once because nothing checked it. This renders every screen
+      # across the responsive ladder and fails on sideways scroll, wrapped or
+      # truncated navigation labels, an off-screen selected tab, sub-10px text,
+      # or a touch target under 44px.
+      - if: matrix.app == 'web'
+        run: npx playwright install --with-deps chromium
+        working-directory: apps/web
+      - if: matrix.app == 'web'
+        run: |
+          node scripts/check-milestones.mjs
+          node scripts/check-assessment-report-flow.mjs
+          node scripts/check-care-dashboard.mjs
+          node scripts/check-booking-flow.mjs
+          node scripts/check-library.mjs
+          node scripts/check-payment-demo.mjs
+        working-directory: apps/web
+      - if: matrix.app == 'web'
+        run: npm run check:responsive
+        working-directory: apps/web
+      - if: matrix.app == 'web'
+        env:
+          VITE_API_URL: https://api.neuronest.test
+          VITE_FIREBASE_API_KEY: firebase-public-ci-placeholder
+          VITE_FIREBASE_AUTH_DOMAIN: neuronest-ci.firebaseapp.com
+          VITE_FIREBASE_PROJECT_ID: neuronest-ci
+          VITE_FIREBASE_APP_ID: 1:1234567890:web:ci
+        run: npm run build
+        working-directory: apps/web
+      - if: matrix.app == 'mobile'
+        env:
+          EXPO_PUBLIC_FIREBASE_API_KEY: firebase-public-ci-placeholder
+          EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN: neuronest-ci.firebaseapp.com
+          EXPO_PUBLIC_FIREBASE_PROJECT_ID: neuronest-ci
+          EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET: neuronest-ci.firebasestorage.app
+          EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: "1234567890"
+          EXPO_PUBLIC_FIREBASE_APP_ID: 1:1234567890:web:ci
+        run: npm run export
+        working-directory: apps/mobile

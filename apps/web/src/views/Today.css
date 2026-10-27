@@ -1,0 +1,69 @@
+.home-dashboard {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 20px;
+}
+.home-dashboard > .card {
+  margin: 0;
+}
+.home-dashboard .section-head {
+  margin-bottom: 16px;
+}
+.home-dashboard p,
+.home-onboarding p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+.home-compose > button {
+  margin-top: 20px;
+}
+.home-appointment .text-button {
+  display: flex;
+  margin-top: 16px;
+}
+.home-notes {
+  grid-column: 1 / -1;
+}
+.home-note {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+}
+.home-note h3 {
+  margin: 0;
+  font-size: 14px;
+}
+.home-note p {
+  margin: 5px 0 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.home-note time {
+  flex-shrink: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+.home-back {
+  margin-bottom: 20px;
+}
+.home-onboarding-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .home-dashboard {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .home-note {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

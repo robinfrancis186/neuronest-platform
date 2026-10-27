@@ -1,0 +1,35 @@
+{
+  "name": "@neuronest/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test src/utils.test.ts src/learning-catalog.test.ts src/assistant-guide.test.ts src/activities.test.ts src/assistant-activities.test.ts && node scripts/check-contrast.mjs && node scripts/check-security-headers.mjs",
+    "check:responsive": "node scripts/check-responsive.mjs"
+  },
+  "dependencies": {
+    "@livekit/components-react": "^2.9.14",
+    "@livekit/components-styles": "^1.1.6",
+    "firebase": "12.18.0",
+    "livekit-client": "^2.15.6",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^4.7.0",
+    "playwright": "^1.55.0",
+    "typescript": "^5.9.2",
+    "vite": "^6.4.5"
+  },
+  "overrides": {
+    "@firebase/firestore": {
+      "@grpc/grpc-js": "1.13.6"
+    }
+  }
+}

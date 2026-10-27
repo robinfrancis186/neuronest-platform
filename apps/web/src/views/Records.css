@@ -1,0 +1,15 @@
+.records-dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 24px;
+}
+.records-dashboard > * { min-width: 0; scroll-margin-top: 110px; }
+.records-dashboard-wide { grid-column: 1 / -1; }
+.records-health { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.records-dashboard .card { min-width: 0; margin: 0; }
+.records-dashboard .section-head, .records-dashboard .list-row { flex-wrap: wrap; gap: 16px; }
+.records-dashboard .grow, .records-dashboard .row-actions > div { min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 1000px) {
+  .records-dashboard, .records-health { grid-template-columns: minmax(0, 1fr); }
+}

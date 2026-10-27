@@ -1,0 +1,426 @@
+/* Image Gen reference: docs/design/nest-launcher-reference.png. */
+.app-shell .assistant-launcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 164px;
+  height: 52px;
+  min-height: 52px;
+  max-width: calc(100vw - 32px);
+  padding: 8px 14px 8px 12px;
+  border: 1px solid #d9e4dc;
+  border-radius: 999px;
+  background: #fff;
+  color: #205c4e;
+  box-shadow:
+    0 8px 24px #163e3324,
+    0 2px 5px #163e330a;
+  transition:
+    box-shadow 150ms ease,
+    border-color 150ms ease;
+}
+.app-shell .assistant-launcher .assistant-launcher-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #205c4e;
+  color: #fff;
+}
+.app-shell .assistant-launcher .assistant-launcher-label {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+}
+.app-shell .assistant-launcher .assistant-launcher-chevron {
+  flex-shrink: 0;
+}
+.app-shell .assistant-launcher:hover {
+  border-color: #9eb9ab;
+  background: #fff;
+  box-shadow:
+    0 10px 28px #163e332e,
+    0 2px 5px #163e330a;
+}
+.app-shell .assistant-launcher:active {
+  box-shadow: 0 3px 10px #163e3324;
+}
+.app-shell .assistant-launcher:focus-visible {
+  outline: 3px solid #34856f;
+  outline-offset: 4px;
+}
+.assistant-dialog:has(.nest-chat) {
+  inset: auto 20px 20px auto;
+  width: min(460px, calc(100vw - 40px));
+  height: min(650px, calc(100dvh - 40px));
+  max-height: calc(100dvh - 40px);
+  padding: 0;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  overflow: hidden;
+  box-shadow: 0 24px 80px #163a302b;
+}
+.assistant-dialog::backdrop {
+  background: #112f263b;
+  backdrop-filter: blur(2px);
+}
+.assistant-dialog .nest-chat {
+  height: 100%;
+  gap: 0;
+  align-items: stretch;
+  display: flex;
+}
+.assistant-dialog .nest-chat .chat-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.nest-chat .chat-card > .section-head {
+  padding: 18px 20px;
+  gap: 12px;
+  flex-wrap: nowrap;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+.nest-chat .section-head .row-actions {
+  flex-wrap: nowrap;
+  gap: 11px;
+  min-width: 0;
+}
+.nest-chat .assistant-brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  flex-shrink: 0;
+  background: var(--surface-sunken);
+}
+.nest-chat .section-head .row-actions > div {
+  min-width: 0;
+}
+.assistant-dialog .nest-chat .section-head h2 {
+  font-size: 17px;
+  margin: 0 0 3px;
+  letter-spacing: -0.3px;
+}
+.nest-chat .section-head small {
+  display: block;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.nest-chat .assistant-close {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--surface-sunken);
+}
+.assistant-dialog .nest-chat .chat-stream {
+  flex: 1;
+  min-height: 0;
+  padding: 22px 20px 12px;
+  max-height: none;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.nest-chat .chat-welcome {
+  padding: 4px 0 0;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  margin: 0;
+}
+.nest-welcome-symbol {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: var(--sage);
+  color: var(--forest-deep);
+  margin-bottom: 17px;
+}
+.nest-chat .chat-welcome h3 {
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+  margin: 0 0 10px;
+  font-weight: 650;
+}
+.nest-chat .chat-welcome p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 20px;
+}
+.assistant-shortcuts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.nest-chat .assistant-destination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 58px;
+  padding: 11px;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: none;
+}
+.nest-chat .assistant-destination:hover {
+  border-color: var(--forest);
+  background: var(--surface-sunken);
+}
+.assistant-destination-icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 30px;
+  border-radius: 9px;
+  color: var(--forest);
+  background: var(--surface-sunken);
+}
+.nest-chat .assistant-destination > span:nth-child(2) {
+  min-width: 0;
+  flex: 1;
+}
+.nest-chat .assistant-destination strong {
+  display: block;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 650;
+  color: var(--text);
+}
+.nest-chat .assistant-destination > svg {
+  flex-shrink: 0;
+  color: var(--forest);
+}
+.assistant-shortcuts .assistant-destination {
+  gap: 7px;
+  padding: 9px;
+}
+.assistant-shortcuts .assistant-destination > svg {
+  display: none;
+}
+.nest-chat .assistant-destination small {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.nest-chat .assistant-browse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 8px;
+  font-size: 12px;
+  width: 100%;
+  margin-top: 8px;
+}
+.nest-chat .conversation-browse {
+  flex-shrink: 0;
+  margin: 0;
+  min-height: 44px;
+  padding: 4px 12px;
+}
+.assistant-directory h3 {
+  margin: 14px 0;
+  font-size: 20px;
+  letter-spacing: -0.4px;
+}
+.assistant-directory > .text-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 0 5px;
+  font-size: 12px;
+}
+.assistant-directory-list,
+.assistant-result-actions {
+  display: grid;
+  gap: 8px;
+}
+.assistant-result-actions {
+  margin-top: 12px;
+}
+.nest-chat .chat-message {
+  display: flex;
+  margin-bottom: 22px;
+}
+.nest-chat .chat-message > div {
+  min-width: 0;
+  max-width: 100%;
+}
+.nest-chat .chat-message > div > strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.nest-chat .chat-message p {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+  white-space: pre-line;
+  margin: 0;
+}
+.nest-chat .chat-message.user {
+  justify-content: flex-end;
+}
+.nest-chat .chat-message.user > div {
+  max-width: 90%;
+  border-radius: 14px 14px 4px 14px;
+  padding: 11px 14px;
+  background: var(--sage);
+  color: var(--text);
+}
+.nest-chat .citations {
+  margin-top: 10px;
+}
+.nest-chat .citations > a {
+  min-height: 44px;
+  font-size: 12px;
+  padding: 8px 10px;
+  line-height: 1.4;
+}
+.nest-chat .citations svg {
+  flex-shrink: 0;
+}
+.nest-chat .chat-composer {
+  display: flex;
+  align-items: end;
+  flex: 0 0 auto;
+  gap: 8px;
+  margin: 8px 16px 0;
+  padding: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: 15px;
+}
+.nest-chat .chat-composer:focus-within {
+  border-color: var(--forest);
+  box-shadow: 0 0 0 2px var(--sage);
+}
+.nest-chat .chat-composer textarea {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  max-height: 120px;
+  padding: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 0;
+  background: transparent;
+  resize: none;
+  box-shadow: none;
+}
+.nest-chat .chat-composer button {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  min-height: 44px;
+  border-radius: 11px;
+  flex-shrink: 0;
+}
+.assistant-privacy-note {
+  flex-shrink: 0;
+  font-size: 10px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--muted);
+  padding: 9px 18px 13px;
+  margin: 0;
+}
+.nest-chat .nest-pending {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--muted);
+  font-size: 13px;
+  padding: 8px 0;
+}
+.nest-chat .nest-offline {
+  font-size: 12px;
+  padding: 8px 16px;
+  margin: 0;
+  color: var(--error);
+}
+@media (max-width: 980px) {
+  .assistant-dialog:has(.nest-chat) {
+    inset: auto 16px 86px auto;
+    height: min(640px, calc(100dvh - 108px));
+    max-height: calc(100dvh - 108px);
+  }
+  .app-shell .assistant-launcher {
+    bottom: calc(86px + env(safe-area-inset-bottom));
+    right: 16px;
+  }
+}
+@media (max-width: 520px) {
+  .assistant-dialog:has(.nest-chat) {
+    inset: 8px;
+    width: calc(100vw - 16px);
+    height: calc(100dvh - 16px);
+    max-height: calc(100dvh - 16px);
+    border-radius: 18px;
+  }
+  .nest-chat .chat-card > .section-head {
+    padding: 14px;
+  }
+  .assistant-dialog .nest-chat .chat-stream {
+    padding: 18px 14px 10px;
+  }
+  .nest-chat .chat-welcome h3 {
+    font-size: 23px;
+  }
+  .nest-chat .chat-composer {
+    margin-inline: 12px;
+  }
+}
+@media (max-width: 340px) {
+  .app-shell .assistant-launcher {
+    gap: 8px;
+    padding-inline: 10px;
+  }
+  .assistant-shortcuts {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-height: 500px) {
+  .assistant-dialog:has(.nest-chat) {
+    inset: 6px;
+    height: calc(100dvh - 12px);
+    max-height: calc(100dvh - 12px);
+  }
+  .nest-welcome-symbol {
+    display: none;
+  }
+}

@@ -1,0 +1,655 @@
+{
+  "version": "2026-10-v1",
+  "checked_on": "2026-10-25",
+  "notice": "Selected prompts adapted from CDC developmental milestone checklists. Not the complete CDC checklist or a validated screening instrument. Malayalam text is a NeuroNest translation, not an official CDC translation.",
+  "bands": [
+    {
+      "months": 2,
+      "source_url": "https://www.cdc.gov/act-early/milestones/2-months.html",
+      "items": [
+        {
+          "id": "2m-1",
+          "domain": "social",
+          "label": {
+            "en": "Smiles when you smile or talk to them",
+            "ml": "നിങ്ങൾ ചിരിക്കുകയോ സംസാരിക്കുകയോ ചെയ്യുമ്പോൾ ചിരിക്കുന്നു"
+          }
+        },
+        {
+          "id": "2m-2",
+          "domain": "communication",
+          "label": {
+            "en": "Makes sounds besides crying",
+            "ml": "കരച്ചിലിന് പുറമേ ശബ്ദങ്ങൾ ഉണ്ടാക്കുന്നു"
+          }
+        },
+        {
+          "id": "2m-3",
+          "domain": "sensory",
+          "label": {
+            "en": "Reacts to a loud sound",
+            "ml": "ഉച്ചത്തിലുള്ള ശബ്ദത്തോട് പ്രതികരിക്കുന്നു"
+          }
+        },
+        {
+          "id": "2m-4",
+          "domain": "sensory",
+          "label": {
+            "en": "Watches you move nearby",
+            "ml": "അടുത്ത് നിങ്ങൾ നീങ്ങുന്നത് നോക്കുന്നു"
+          }
+        },
+        {
+          "id": "2m-5",
+          "domain": "movement",
+          "label": {
+            "en": "Lifts their head during tummy time",
+            "ml": "കമിഴ്ന്നുകിടക്കുമ്പോൾ തല ഉയർത്തുന്നു"
+          }
+        },
+        {
+          "id": "2m-6",
+          "domain": "movement",
+          "label": {
+            "en": "Moves both arms and both legs",
+            "ml": "രണ്ടു കൈകളും കാലുകളും ചലിപ്പിക്കുന്നു"
+          }
+        }
+      ]
+    },
+    {
+      "months": 4,
+      "source_url": "https://www.cdc.gov/act-early/milestones/4-months.html",
+      "items": [
+        {
+          "id": "4m-1",
+          "domain": "social",
+          "label": {
+            "en": "Smiles to get your attention",
+            "ml": "നിങ്ങളുടെ ശ്രദ്ധ നേടാൻ ചിരിക്കുന്നു"
+          }
+        },
+        {
+          "id": "4m-2",
+          "domain": "communication",
+          "label": {
+            "en": "Makes cooing sounds, such as ooh or aah",
+            "ml": "ഊ, ആ പോലുള്ള ശബ്ദങ്ങൾ ഉണ്ടാക്കുന്നു"
+          }
+        },
+        {
+          "id": "4m-3",
+          "domain": "communication",
+          "label": {
+            "en": "Makes sounds in response when you talk",
+            "ml": "നിങ്ങൾ സംസാരിക്കുമ്പോൾ മറുപടിയായി ശബ്ദമുണ്ടാക്കുന്നു"
+          }
+        },
+        {
+          "id": "4m-4",
+          "domain": "sensory",
+          "label": {
+            "en": "Turns towards your voice",
+            "ml": "നിങ്ങളുടെ ശബ്ദത്തിന്റെ ദിശയിലേക്ക് തല തിരിക്കുന്നു"
+          }
+        },
+        {
+          "id": "4m-5",
+          "domain": "movement",
+          "label": {
+            "en": "Keeps their head steady while being held",
+            "ml": "എടുത്തുപിടിക്കുമ്പോൾ തല സ്ഥിരമായി നിർത്തുന്നു"
+          }
+        },
+        {
+          "id": "4m-6",
+          "domain": "movement",
+          "label": {
+            "en": "Holds a toy placed in their hand",
+            "ml": "കൈയിൽ കൊടുക്കുന്ന കളിപ്പാട്ടം പിടിക്കുന്നു"
+          }
+        }
+      ]
+    },
+    {
+      "months": 6,
+      "source_url": "https://www.cdc.gov/act-early/milestones/6-months.html",
+      "items": [
+        {
+          "id": "6m-1",
+          "domain": "social",
+          "label": {
+            "en": "Recognizes people they know",
+            "ml": "പരിചയമുള്ള ആളുകളെ തിരിച്ചറിയുന്നു"
+          }
+        },
+        {
+          "id": "6m-2",
+          "domain": "communication",
+          "label": {
+            "en": "Takes turns making sounds with you",
+            "ml": "നിങ്ങളോടൊപ്പം മാറിമാറി ശബ്ദങ്ങൾ ഉണ്ടാക്കുന്നു"
+          }
+        },
+        {
+          "id": "6m-3",
+          "domain": "cognitive",
+          "label": {
+            "en": "Reaches for a toy they want",
+            "ml": "ആവശ്യമുള്ള കളിപ്പാട്ടത്തിനായി കൈ നീട്ടുന്നു"
+          }
+        },
+        {
+          "id": "6m-4",
+          "domain": "cognitive",
+          "label": {
+            "en": "Explores objects by bringing them to their mouth",
+            "ml": "വസ്തുക്കൾ വായിലേക്കു കൊണ്ടുവന്ന് പരിശോധിക്കുന്നു"
+          }
+        },
+        {
+          "id": "6m-5",
+          "domain": "movement",
+          "label": {
+            "en": "Rolls from tummy onto their back",
+            "ml": "കമിഴ്ന്ന നിലയിൽനിന്ന് മലർന്നുകിടക്കുന്ന നിലയിലേക്ക് മറിയുന്നു"
+          }
+        },
+        {
+          "id": "6m-6",
+          "domain": "movement",
+          "label": {
+            "en": "Uses their hands for support when sitting",
+            "ml": "ഇരിക്കുമ്പോൾ കൈകൾ ഊന്നി താങ്ങുന്നു"
+          }
+        }
+      ]
+    },
+    {
+      "months": 9,
+      "source_url": "https://www.cdc.gov/act-early/milestones/9-months.html",
+      "items": [
+        {
+          "id": "9m-1",
+          "domain": "social",
+          "label": {
+            "en": "Responds by looking when their name is called",
+            "ml": "പേര് വിളിക്കുമ്പോൾ നോക്കുന്നു"
+          }
+        },
+        {
+          "id": "9m-2",
+          "domain": "social",
+          "label": {
+            "en": "Enjoys a game of peek-a-boo",
+            "ml": "ഒളിച്ചുകളിക്കുന്ന കളി ആസ്വദിക്കുന്നു"
+          }
+        },
+        {
+          "id": "9m-3",
+          "domain": "communication",
+          "label": {
+            "en": "Repeats sounds such as bababa or mamama",
+            "ml": "ബബബ, മമമ പോലുള്ള ശബ്ദങ്ങൾ ആവർത്തിക്കുന്നു"
+          }
+        },
+        {
+          "id": "9m-4",
+          "domain": "cognitive",
+          "label": {
+            "en": "Looks for a toy that falls out of sight",
+            "ml": "കാണാതെ താഴെവീഴുന്ന കളിപ്പാട്ടം അന്വേഷിക്കുന്നു"
+          }
+        },
+        {
+          "id": "9m-5",
+          "domain": "movement",
+          "label": {
+            "en": "Sits without needing support",
+            "ml": "താങ്ങില്ലാതെ ഇരിക്കുന്നു"
+          }
+        },
+        {
+          "id": "9m-6",
+          "domain": "movement",
+          "label": {
+            "en": "Passes an object between hands",
+            "ml": "ഒരു കൈയിൽനിന്ന് മറ്റേ കൈയിലേക്ക് വസ്തു മാറ്റുന്നു"
+          }
+        }
+      ]
+    },
+    {
+      "months": 12,
+      "source_url": "https://www.cdc.gov/act-early/milestones/1-year.html",
+      "items": [
+        {
+          "id": "12m-1",
+          "domain": "social",
+          "label": {
+            "en": "Joins in a simple game with you, such as clapping games",
+            "ml": "കൈകൊട്ടുന്നതുപോലെ ലളിതമായ കളികളിൽ നിങ്ങളോടൊപ്പം ചേരുന്നു"
+          }
+        },
+        {
+          "id": "12m-2",
+          "domain": "communication",
+          "label": {
+            "en": "Waves goodbye",
+            "ml": "കൈവീശി യാത്ര പറയുന്നു"
+          }
+        },
+        {
+          "id": "12m-3",
+          "domain": "communication",
+          "label": {
+            "en": "Uses a special name for a parent",
+            "ml": "രക്ഷിതാവിനെ പ്രത്യേക പേര് വിളിക്കുന്നു"
+          }
+        },
+        {
+          "id": "12m-4",
+          "domain": "cognitive",
+          "label": {
+            "en": "Places an object inside a container",
+            "ml": "ഒരു വസ്തു പാത്രത്തിനുള്ളിൽ ഇടുന്നു"
+          }
+        },
+        {
+          "id": "12m-5",
+          "domain": "movement",
+          "label": {
+            "en": "Pulls up into standing",
+            "ml": "പിടിച്ചുയർന്ന് നിൽക്കുന്നു"
+          }
+        },
+        {
+          "id": "12m-6",
+          "domain": "movement",
+          "label": {
+            "en": "Walks while holding furniture",
+            "ml": "ഫർണിച്ചറിൽ പിടിച്ച് നടക്കുന്നു"
+          }
+        }
+      ]
+    },
+    {
+      "months": 15,
+      "source_url": "https://www.cdc.gov/act-early/milestones/15-months.html",
+      "items": [
+        {
+          "id": "15m-1",
+          "domain": "social",
+          "label": {
+            "en": "Shows you an object they like",
+            "ml": "ഇഷ്ടമുള്ള വസ്തു നിങ്ങളെ കാണിക്കുന്നു"
+          }
+        },
+        {
+          "id": "15m-2",
+          "domain": "communication",
+          "label": {
+            "en": "Tries one or two words besides names for parents",
+            "ml": "രക്ഷിതാക്കളുടെ പേരുകൾക്കുപുറമേ ഒന്നോ രണ്ടോ വാക്കുകൾ പറയാൻ ശ്രമിക്കുന്നു"
+          }
+        },
+        {
+          "id": "15m-3",
+          "domain": "communication",
+          "label": {
+            "en": "Points to request something or ask for help",
+            "ml": "എന്തെങ്കിലും ആവശ്യപ്പെടാനോ സഹായം ചോദിക്കാനോ വിരൽ ചൂണ്ടുന്നു"
+          }
+        },
+        {
+          "id": "15m-4",
+          "domain": "cognitive",
+          "label": {
+            "en": "Stacks two small objects",
+            "ml": "രണ്ട് ചെറിയ വസ്തുക്കൾ ഒന്നിനുമുകളിൽ ഒന്നായി വയ്ക്കുന്നു"
+          }
+        },
+        {
+          "id": "15m-5",
+          "domain": "movement",
+          "label": {
+            "en": "Takes a few independent steps",
+            "ml": "സ്വന്തമായി ഏതാനും ചുവടുകൾ നടക്കുന്നു"
+          }
+        },
+        {
+          "id": "15m-6",
+          "domain": "daily_living",
+          "label": {
+            "en": "Feeds themselves some food with their fingers",
+            "ml": "വിരലുകൾ ഉപയോഗിച്ച് കുറച്ച് ഭക്ഷണം സ്വയം കഴിക്കുന്നു"
+          }
+        }
+      ]
+    },
+    {
+      "months": 18,
+      "source_url": "https://www.cdc.gov/act-early/milestones/18-months.html",
+      "items": [
+        {
+          "id": "18m-1",
+          "domain": "social",
+          "label": {
+            "en": "Points out something interesting to you",
+            "ml": "രസകരമായ എന്തെങ്കിലും നിങ്ങളെ വിരൽചൂണ്ടി കാണിക്കുന്നു"
+          }
+        },
+        {
+          "id": "18m-2",
+          "domain": "communication",
+          "label": {
+            "en": "Tries at least three words besides names for parents",
+            "ml": "രക്ഷിതാക്കളുടെ പേരുകൾക്കുപുറമേ മൂന്ന് വാക്കുകളെങ്കിലും പറയാൻ ശ്രമിക്കുന്നു"
+          }
+        },
+        {
+          "id": "18m-3",
+          "domain": "communication",
+          "label": {
+            "en": "Follows a one-step spoken direction without a gesture",
+            "ml": "ആംഗ്യമില്ലാതെ പറയുന്ന ഒറ്റ നിർദ്ദേശം പാലിക്കുന്നു"
+          }
+        },
+        {
+          "id": "18m-4",
+          "domain": "cognitive",
+          "label": {
+            "en": "Uses a toy in a simple way, such as pushing a toy car",
+            "ml": "കളിപ്പാട്ട കാർ തള്ളുന്നതുപോലെ ലളിതമായി കളിക്കുന്നു"
+          }
+        },
+        {
+          "id": "18m-5",
+          "domain": "movement",
+          "label": {
+            "en": "Walks without holding someone or something",
+            "ml": "ആരെയും ഒന്നിനെയും പിടിക്കാതെ നടക്കുന്നു"
+          }
+        },
+        {
+          "id": "18m-6",
+          "domain": "daily_living",
+          "label": {
+            "en": "Tries to eat with a spoon",
+            "ml": "സ്പൂൺ ഉപയോഗിച്ച് കഴിക്കാൻ ശ്രമിക്കുന്നു"
+          }
+        }
+      ]
+    },
+    {
+      "months": 24,
+      "source_url": "https://www.cdc.gov/act-early/milestones/2-years.html",
+      "items": [
+        {
+          "id": "24m-1",
+          "domain": "social",
+          "label": {
+            "en": "Notices when someone else is hurt or upset",
+            "ml": "മറ്റൊരാൾക്ക് വേദനയോ വിഷമമോ ഉണ്ടാകുന്നത് ശ്രദ്ധിക്കുന്നു"
+          }
+        },
+        {
+          "id": "24m-2",
+          "domain": "communication",
+          "label": {
+            "en": "Combines at least two words",
+            "ml": "രണ്ട് വാക്കുകളെങ്കിലും ചേർത്തുപറയുന്നു"
+          }
+        },
+        {
+          "id": "24m-3",
+          "domain": "communication",
+          "label": {
+            "en": "Points to at least two body parts when asked",
+            "ml": "ചോദിക്കുമ്പോൾ രണ്ട് ശരീരഭാഗങ്ങളെങ്കിലും ചൂണ്ടിക്കാണിക്കുന്നു"
+          }
+        },
+        {
+          "id": "24m-4",
+          "domain": "cognitive",
+          "label": {
+            "en": "Tries buttons, switches or knobs on a toy",
+            "ml": "കളിപ്പാട്ടത്തിലെ ബട്ടണുകളോ സ്വിച്ചുകളോ തിരിപ്പുകളോ ഉപയോഗിക്കാൻ ശ്രമിക്കുന്നു"
+          }
+        },
+        {
+          "id": "24m-5",
+          "domain": "movement",
+          "label": {
+            "en": "Kicks a ball",
+            "ml": "പന്ത് ചവിട്ടുന്നു"
+          }
+        },
+        {
+          "id": "24m-6",
+          "domain": "daily_living",
+          "label": {
+            "en": "Eats using a spoon",
+            "ml": "സ്പൂൺ ഉപയോഗിച്ച് ഭക്ഷണം കഴിക്കുന്നു"
+          }
+        }
+      ]
+    },
+    {
+      "months": 30,
+      "source_url": "https://www.cdc.gov/act-early/milestones/30-months.html",
+      "items": [
+        {
+          "id": "30m-1",
+          "domain": "social",
+          "label": {
+            "en": "Plays beside other children and sometimes joins them",
+            "ml": "മറ്റു കുട്ടികളുടെ അടുത്ത് കളിക്കുകയും ചിലപ്പോൾ അവരോടൊപ്പം ചേരുകയും ചെയ്യുന്നു"
+          }
+        },
+        {
+          "id": "30m-2",
+          "domain": "communication",
+          "label": {
+            "en": "Uses around fifty words",
+            "ml": "ഏകദേശം അൻപത് വാക്കുകൾ ഉപയോഗിക്കുന്നു"
+          }
+        },
+        {
+          "id": "30m-3",
+          "domain": "communication",
+          "label": {
+            "en": "Combines words with an action word, such as dog runs",
+            "ml": "നായ ഓടുന്നു എന്നതുപോലെ പ്രവർത്തനവാക്ക് ചേർത്ത് പറയുന്നു"
+          }
+        },
+        {
+          "id": "30m-4",
+          "domain": "cognitive",
+          "label": {
+            "en": "Follows two linked directions",
+            "ml": "പരസ്പരം ബന്ധപ്പെട്ട രണ്ട് നിർദ്ദേശങ്ങൾ പാലിക്കുന്നു"
+          }
+        },
+        {
+          "id": "30m-5",
+          "domain": "movement",
+          "label": {
+            "en": "Jumps with both feet leaving the ground",
+            "ml": "രണ്ടു കാലുകളും നിലത്തുനിന്ന് ഉയർത്തി ചാടുന്നു"
+          }
+        },
+        {
+          "id": "30m-6",
+          "domain": "daily_living",
+          "label": {
+            "en": "Removes some loose clothing independently",
+            "ml": "അയഞ്ഞ ചില വസ്ത്രങ്ങൾ സ്വയം അഴിക്കുന്നു"
+          }
+        }
+      ]
+    },
+    {
+      "months": 36,
+      "source_url": "https://www.cdc.gov/act-early/milestones/3-years.html",
+      "items": [
+        {
+          "id": "36m-1",
+          "domain": "social",
+          "label": {
+            "en": "Notices other children and joins their play",
+            "ml": "മറ്റു കുട്ടികളെ ശ്രദ്ധിച്ച് അവരുടെ കളിയിൽ ചേരുന്നു"
+          }
+        },
+        {
+          "id": "36m-2",
+          "domain": "communication",
+          "label": {
+            "en": "Has a conversation with at least two back-and-forth exchanges",
+            "ml": "രണ്ടു തവണയെങ്കിലും മാറിമാറി സംസാരിക്കുന്നു"
+          }
+        },
+        {
+          "id": "36m-3",
+          "domain": "communication",
+          "label": {
+            "en": "Usually speaks clearly enough for others to understand",
+            "ml": "പൊതുവേ മറ്റുള്ളവർക്ക് മനസ്സിലാകുന്ന വിധം സംസാരിക്കുന്നു"
+          }
+        },
+        {
+          "id": "36m-4",
+          "domain": "cognitive",
+          "label": {
+            "en": "Copies a circle after you show how",
+            "ml": "കാണിച്ചുകൊടുത്താൽ വൃത്തം വരയ്ക്കുന്നു"
+          }
+        },
+        {
+          "id": "36m-5",
+          "domain": "movement",
+          "label": {
+            "en": "Threads large beads or similar items",
+            "ml": "വലിയ മുത്തുകളോ സമാന വസ്തുക്കളോ കോർക്കുന്നു"
+          }
+        },
+        {
+          "id": "36m-6",
+          "domain": "daily_living",
+          "label": {
+            "en": "Uses a fork to eat",
+            "ml": "ഫോർക്ക് ഉപയോഗിച്ച് കഴിക്കുന്നു"
+          }
+        }
+      ]
+    },
+    {
+      "months": 48,
+      "source_url": "https://www.cdc.gov/act-early/milestones/4-years.html",
+      "items": [
+        {
+          "id": "48m-1",
+          "domain": "social",
+          "label": {
+            "en": "Comforts someone who is hurt or sad",
+            "ml": "വേദനയോ വിഷമമോ ഉള്ള ഒരാളെ ആശ്വസിപ്പിക്കുന്നു"
+          }
+        },
+        {
+          "id": "48m-2",
+          "domain": "communication",
+          "label": {
+            "en": "Uses sentences of at least four words",
+            "ml": "നാലു വാക്കുകളെങ്കിലും ഉള്ള വാക്യങ്ങൾ പറയുന്നു"
+          }
+        },
+        {
+          "id": "48m-3",
+          "domain": "communication",
+          "label": {
+            "en": "Talks about something that happened that day",
+            "ml": "അന്ന് സംഭവിച്ച ഒരു കാര്യത്തെക്കുറിച്ച് സംസാരിക്കുന്നു"
+          }
+        },
+        {
+          "id": "48m-4",
+          "domain": "cognitive",
+          "label": {
+            "en": "Names a few colours",
+            "ml": "ഏതാനും നിറങ്ങളുടെ പേരുകൾ പറയുന്നു"
+          }
+        },
+        {
+          "id": "48m-5",
+          "domain": "movement",
+          "label": {
+            "en": "Usually catches a large ball",
+            "ml": "വലിയ പന്ത് സാധാരണയായി പിടിക്കുന്നു"
+          }
+        },
+        {
+          "id": "48m-6",
+          "domain": "daily_living",
+          "label": {
+            "en": "Opens some buttons on clothing",
+            "ml": "വസ്ത്രത്തിലെ ചില ബട്ടണുകൾ അഴിക്കുന്നു"
+          }
+        }
+      ]
+    },
+    {
+      "months": 60,
+      "source_url": "https://www.cdc.gov/act-early/milestones/5-years.html",
+      "items": [
+        {
+          "id": "60m-1",
+          "domain": "social",
+          "label": {
+            "en": "Takes turns or follows rules in games with other children",
+            "ml": "മറ്റു കുട്ടികളോടൊപ്പം കളിക്കുമ്പോൾ ഊഴമെടുക്കുകയോ നിയമങ്ങൾ പാലിക്കുകയോ ചെയ്യുന്നു"
+          }
+        },
+        {
+          "id": "60m-2",
+          "domain": "communication",
+          "label": {
+            "en": "Tells a story with at least two events",
+            "ml": "രണ്ട് സംഭവങ്ങളെങ്കിലും ഉള്ള കഥ പറയുന്നു"
+          }
+        },
+        {
+          "id": "60m-3",
+          "domain": "communication",
+          "label": {
+            "en": "Keeps a conversation going for more than three exchanges",
+            "ml": "മൂന്നിലധികം തവണ മാറിമാറി സംഭാഷണം തുടരുന്നു"
+          }
+        },
+        {
+          "id": "60m-4",
+          "domain": "cognitive",
+          "label": {
+            "en": "Counts up to ten",
+            "ml": "പത്ത് വരെ എണ്ണുന്നു"
+          }
+        },
+        {
+          "id": "60m-5",
+          "domain": "movement",
+          "label": {
+            "en": "Hops using one foot",
+            "ml": "ഒറ്റക്കാലിൽ ചാടുന്നു"
+          }
+        },
+        {
+          "id": "60m-6",
+          "domain": "daily_living",
+          "label": {
+            "en": "Fastens some buttons",
+            "ml": "ചില ബട്ടണുകൾ ഇടുന്നു"
+          }
+        }
+      ]
+    }
+  ]
+}

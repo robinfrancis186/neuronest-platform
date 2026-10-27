@@ -1,0 +1,219 @@
+.milestone-checkin {
+  display: grid;
+  gap: 20px;
+}
+.milestone-checkin > .card {
+  margin: 0;
+}
+.milestone-checkin p {
+  line-height: 1.65;
+}
+.checkin-age {
+  color: var(--leaf);
+  font-weight: 600;
+}
+.checkin-fields {
+  border: 0;
+  padding: 0;
+  margin: 24px 0;
+  min-width: 0;
+}
+.checkin-question {
+  border: 0;
+  border-top: 1px solid var(--border);
+  padding: 18px 0;
+  margin: 0;
+  min-width: 0;
+}
+.checkin-question legend {
+  float: left;
+  width: 100%;
+  margin-bottom: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.checkin-question legend small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.checkin-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  clear: both;
+}
+.checkin-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  min-height: 44px;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.checkin-options .selected {
+  background: var(--sage);
+  border-color: var(--leaf);
+}
+.checkin-options input {
+  accent-color: var(--forest);
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin: 0;
+}
+.checkin-submit,
+.checkin-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.checkin-source,
+.checkin-boundary {
+  font-size: 12px;
+  color: var(--muted);
+}
+.checkin-boundary {
+  margin-top: 24px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+.checkin-counts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+}
+.checkin-counts div {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.checkin-counts dt {
+  color: var(--muted);
+  font-size: 12px;
+}
+.checkin-counts dd {
+  font-size: 24px;
+  margin: 8px 0 0;
+}
+.checkin-response-list,
+.checkin-history {
+  list-style: none;
+  padding: 0;
+}
+.checkin-response-list li,
+.checkin-history li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+.checkin-response-list strong {
+  flex-shrink: 0;
+  font-size: 13px;
+}
+.checkin-ai {
+  background: var(--sage);
+  padding: 18px;
+  border-radius: 10px;
+  margin: 24px 0;
+}
+.checkin-ai p {
+  white-space: pre-line;
+}
+.checkin-ai a {
+  display: block;
+  margin-top: 8px;
+}
+.checkin-ai-controls {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0;
+  justify-items: start;
+  padding: 20px;
+  background: var(--sage);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.checkin-ai-controls h3,
+.checkin-ai-controls p {
+  margin: 0;
+}
+.checkin-guidance-label {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0 0 8px;
+}
+.checkin-probability {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+.checkin-probability dd {
+  margin: 0;
+  font-weight: 600;
+}
+.checkin-research {
+  margin: 20px 0;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.checkin-research summary {
+  cursor: pointer;
+  font-weight: 600;
+  min-height: 44px;
+  align-content: center;
+}
+.checkin-research ul {
+  list-style: none;
+  padding: 0;
+}
+.checkin-research li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.checkin-research p,
+.checkin-research a {
+  font-size: 13px;
+}
+@media (max-width: 600px) {
+  .milestone-checkin a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .checkin-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .checkin-options label {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .checkin-counts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .checkin-response-list li,
+  .checkin-history li {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

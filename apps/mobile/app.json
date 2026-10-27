@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "NeuroNest",
+    "slug": "neuronest",
+    "scheme": "neuronest",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F7F6F0",
+    "ios": {
+      "bundleIdentifier": "in.neuronest.family",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Your camera is used only when you join a consultation.",
+        "NSMicrophoneUsageDescription": "Your microphone is used only when you join a consultation.",
+        "ITSAppUsesNonExemptEncryption": true,
+        "NSFaceIDUsageDescription": "Protect your NeuroNest account on this device."
+      },
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "package": "in.neuronest.family",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "MODIFY_AUDIO_SETTINGS",
+        "BLUETOOTH_CONNECT"
+      ],
+      "allowBackup": false,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F7F6F0"
+      },
+      "googleServicesFile": "./google-services.json"
+    },
+    "plugins": [
+      "expo-dev-client",
+      [
+        "expo-secure-store",
+        {
+          "configureAndroidBackup": true
+        }
+      ],
+      "expo-web-browser",
+      "expo-document-picker",
+      [
+        "expo-notifications",
+        {
+          "color": "#166F61",
+          "defaultChannel": "care-updates"
+        }
+      ],
+      "@livekit/react-native-expo-plugin",
+      "@config-plugins/react-native-webrtc",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "15.1"
+          },
+          "android": {
+            "minSdkVersion": 24
+          }
+        }
+      ]
+    ],
+    "web": {
+      "bundler": "metro",
+      "name": "NeuroNest Family"
+    },
+    "icon": "./assets/icon.png"
+  }
+}

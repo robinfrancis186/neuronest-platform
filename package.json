@@ -1,0 +1,27 @@
+{
+  "name": "neuronest",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NeuroNest local care platform and independent AI engines",
+  "scripts": {
+    "dev:web": "npm --prefix apps/web run dev -- --host 127.0.0.1",
+    "build:web": "npm --prefix apps/web run build",
+    "check:mobile": "npm --prefix apps/mobile run typecheck",
+    "contracts": "node scripts/generate-contracts.mjs",
+    "check:contracts": "node scripts/generate-contracts.mjs --check",
+    "test:api": "node scripts/smoke-api.mjs",
+    "test:video": "node scripts/smoke-video.mjs",
+    "test:restore": "python3 scripts/dev-restore-check.py",
+    "test:load": "node scripts/smoke-load.mjs",
+    "check:schema": "node scripts/check-schema.mjs",
+    "format": "prettier --write \"apps/**/*.{ts,tsx,css,json}\" \"scripts/**/*.mjs\" \"*.{json,md}\" \"docs/**/*.md\" && uvx ruff@0.14.5 format .",
+    "check:format": "prettier --check \"apps/**/*.{ts,tsx,css,json}\" \"scripts/**/*.mjs\" \"*.{json,md}\" \"docs/**/*.md\""
+  },
+  "devDependencies": {
+    "openapi-typescript": "7.13.0",
+    "prettier": "^3.4.2"
+  },
+  "overrides": {
+    "js-yaml": "4.3.2"
+  }
+}

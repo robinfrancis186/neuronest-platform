@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "version": "synthetic-local-2026-09-v1",
+  "environment": "synthetic",
+  "approval": {"status": "synthetic", "reference": "Local automated fixtures only", "approved_by": "", "approved_at": null},
+  "currency": "INR",
+  "booking": {"hold_minutes": 10},
+  "fees": {"platform_fee_bps": 0},
+  "cancellation": {"notice_hours": 24, "refund_percent": 100, "late_refund_percent": 100},
+  "retention": {"clinical_days": 30, "financial_days": 30, "audit_days": 30, "conversation_days": 1}
+}

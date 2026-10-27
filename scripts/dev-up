@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+python3 scripts/dev-init.py
+export DOCKER_CONTEXT="${DOCKER_CONTEXT:-colima-neuronest}"
+if ! command -v docker >/dev/null; then
+  printf '%s\n' 'Install Docker, or on macOS: brew install docker docker-compose colima' >&2
+  exit 1
+fi
+if ! docker info >/dev/null 2>&1; then
+  command -v colima >/dev/null || { printf '%s\n' 'Start your Docker engine first.' >&2; exit 1; }
+  colima start --profile neuronest --cpu 2 --memory 4 --disk 20 --vm-type vz --mount-type virtiofs --mount "$PWD:w" --activate=false
+  export DOCKER_CONTEXT=colima-neuronest
+fi
+if docker compose version >/dev/null 2>&1; then COMPOSE=(docker compose); else COMPOSE=(docker-compose); fi
+"${COMPOSE[@]}" up -d postgres rabbitmq livekit clamav
+"${COMPOSE[@]}" build core assistant diagnostic
+"${COMPOSE[@]}" run --rm core python manage.py migrate --noinput
+"${COMPOSE[@]}" up -d --wait --wait-timeout 300
+python3 scripts/dev-check.py
+"${COMPOSE[@]}" ps
+printf '%s\n' 'API: http://localhost:8000/health/  Identity: configured Firebase project' 'Web: run npm run dev:web (see root package scripts).' 'Create and verify a Firebase account before opening the workspace.'

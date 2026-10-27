@@ -1,0 +1,505 @@
+{
+  "version": "2026-10-app-guide-v3",
+  "provenance": {
+    "source": "Graphify product projection, checked against current routes",
+    "graph_sha256": "cf0bab461d659afc49cf8c1eee0e4596697a1bf595e4da552c06a7e869e3acf6",
+    "nodes": 2226,
+    "links": 5738
+  },
+  "destinations": [
+    {
+      "id": "home",
+      "view": "today",
+      "tab": "",
+      "label": {
+        "en": "Home",
+        "ml": "ഹോം"
+      },
+      "description": {
+        "en": "See recent observations and your next appointment.",
+        "ml": "സമീപകാല നിരീക്ഷണങ്ങളും അടുത്ത കൂടിക്കാഴ്ചയും കാണുക."
+      },
+      "keywords": "home dashboard today overview",
+      "graph_node": "apps_web_src_views_today_todayview",
+      "source_file": "apps/web/src/views/Today.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "milestones",
+      "view": "milestones",
+      "tab": "",
+      "label": {
+        "en": "Check milestones",
+        "ml": "വളർച്ചാ നാഴികക്കല്ലുകൾ"
+      },
+      "description": {
+        "en": "Answer age-based milestone questions and review saved explanations.",
+        "ml": "പ്രായത്തിനനുസരിച്ചുള്ള ചോദ്യങ്ങൾക്കും സൂക്ഷിച്ച വിശദീകരണങ്ങൾക്കും."
+      },
+      "keywords": "milestone age development skill check in assessment prediction AI വളർച്ച നാഴികക്കല്ല് പ്രായം",
+      "graph_node": "apps_web_src_views_milestones_milestonesview",
+      "source_file": "apps/web/src/views/Milestones.tsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "activities",
+      "view": "activities",
+      "tab": "",
+      "label": {
+        "en": "Games and activities",
+        "ml": "കളികളും പ്രവർത്തനങ്ങളും"
+      },
+      "description": {
+        "en": "Find age-matched games for shapes, colours, counting, memory and size, plus caregiver-guided play.",
+        "ml": "പ്രായത്തിനനുസരിച്ചുള്ള ആകൃതി, നിറം, എണ്ണൽ, ഓർമ്മ, വലുപ്പം എന്നിവയുടെ കളികളും രക്ഷിതാവിനൊപ്പമുള്ള പ്രവർത്തനങ്ങളും."
+      },
+      "keywords": "activities activity game games play memory match pairs shape pattern puzzles കളി കളികൾ പ്രവർത്തനങ്ങൾ ഓർമ്മ ആകൃതി colours colors counting flowers numbers sizes big small നിറം നിറങ്ങൾ എണ്ണൽ പൂക്കൾ വലുപ്പം",
+      "graph_node": "",
+      "source_kind": "route_extension",
+      "source_file": "apps/web/src/views/Activities.tsx",
+      "source_location": "L114"
+    },
+    {
+      "id": "assessments",
+      "view": "assessments",
+      "tab": "",
+      "label": {
+        "en": "Parent questionnaire",
+        "ml": "രക്ഷിതൃ ചോദ്യാവലി"
+      },
+      "description": {
+        "en": "Complete and review the parent developmental questionnaire.",
+        "ml": "രക്ഷിതാക്കൾക്കുള്ള വികാസ ചോദ്യാവലി പൂർത്തിയാക്കുക."
+      },
+      "keywords": "questionnaire assessment survey form ചോദ്യാവലി പരിശോധന",
+      "graph_node": "apps_web_src_views_assessment_assessmentview",
+      "source_file": "apps/web/src/views/Assessment.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "reports",
+      "view": "reports",
+      "tab": "",
+      "label": {
+        "en": "View reports",
+        "ml": "റിപ്പോർട്ടുകൾ കാണുക"
+      },
+      "description": {
+        "en": "Review developmental observations, goals and growth summaries.",
+        "ml": "നിരീക്ഷണങ്ങൾ, ലക്ഷ്യങ്ങൾ, വളർച്ച എന്നിവയുടെ സംഗ്രഹം."
+      },
+      "keywords": "report progress summary chart growth export റിപ്പോർട്ട് പുരോഗതി",
+      "graph_node": "apps_web_src_views_reports_reportsview",
+      "source_file": "apps/web/src/views/Reports.tsx",
+      "source_location": "L216"
+    },
+    {
+      "id": "booking",
+      "view": "care",
+      "tab": "specialists",
+      "label": {
+        "en": "Find a doctor",
+        "ml": "ഡോക്ടറെ കണ്ടെത്തുക"
+      },
+      "description": {
+        "en": "Find specialist profiles and available consultation times.",
+        "ml": "വിദഗ്ധരുടെ വിവരങ്ങളും ലഭ്യമായ കൂടിക്കാഴ്ചാ സമയങ്ങളും."
+      },
+      "keywords": "book appointment doctor specialist clinic consultation online offline pediatrician visit ഡോക്ടർ അപ്പോയിന്റ്മെന്റ് ബുക്ക്",
+      "graph_node": "apps_web_src_views_care_careview",
+      "source_file": "apps/web/src/views/Care.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "appointments",
+      "view": "care",
+      "tab": "appointments",
+      "label": {
+        "en": "My appointments",
+        "ml": "എന്റെ കൂടിക്കാഴ്ചകൾ"
+      },
+      "description": {
+        "en": "Review upcoming appointments and join a confirmed online consultation.",
+        "ml": "വരാനിരിക്കുന്ന കൂടിക്കാഴ്ചകൾ കാണുകയും സ്ഥിരീകരിച്ച ഓൺലൈൻ കൂടിക്കാഴ്ചയിൽ ചേരുകയും ചെയ്യുക."
+      },
+      "keywords": "upcoming booked appointment join video call meeting schedule history കൂടിക്കാഴ്ച വീഡിയോ",
+      "graph_node": "apps_web_src_views_care_careview",
+      "source_file": "apps/web/src/views/Care.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "messages",
+      "view": "care",
+      "tab": "messages",
+      "label": {
+        "en": "Care messages",
+        "ml": "പരിചരണ സന്ദേശങ്ങൾ"
+      },
+      "description": {
+        "en": "Open conversations with your care team.",
+        "ml": "പരിചരണ സംഘവുമായുള്ള സന്ദേശങ്ങൾ തുറക്കുക."
+      },
+      "keywords": "message chat doctor conversation inbox send സന്ദേശം ചാറ്റ്",
+      "graph_node": "apps_web_src_views_care_careview",
+      "source_file": "apps/web/src/views/Care.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "payments",
+      "view": "care",
+      "tab": "payments",
+      "label": {
+        "en": "Payments",
+        "ml": "പണമടയ്ക്കൽ"
+      },
+      "description": {
+        "en": "Review payments or open the project test checkout.",
+        "ml": "പണമടയ്ക്കൽ വിവരങ്ങളോ പ്രോജക്ട് പരീക്ഷണ പണമടയ്ക്കലോ തുറക്കുക."
+      },
+      "keywords": "payment pay checkout refund receipt fee bill transaction പണം ഫീസ്",
+      "graph_node": "apps_web_src_views_paymentdemo_demoorder",
+      "source_file": "apps/web/src/views/PaymentDemo.tsx",
+      "source_location": "L8"
+    },
+    {
+      "id": "referrals",
+      "view": "care",
+      "tab": "referrals",
+      "label": {
+        "en": "Referrals",
+        "ml": "റഫറലുകൾ"
+      },
+      "description": {
+        "en": "Review referrals recorded by your care team.",
+        "ml": "പരിചരണ സംഘം രേഖപ്പെടുത്തിയ റഫറലുകൾ കാണുക."
+      },
+      "keywords": "referral referred specialist റഫറൽ",
+      "graph_node": "apps_web_src_views_care_careview",
+      "source_file": "apps/web/src/views/Care.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "library",
+      "view": "library",
+      "tab": "",
+      "label": {
+        "en": "Parent library",
+        "ml": "രക്ഷിതാക്കളുടെ അറിവ്"
+      },
+      "description": {
+        "en": "Explore parent resources about development and developmental conditions.",
+        "ml": "വികാസത്തെയും വികാസ വ്യത്യാസങ്ങളെയും കുറിച്ചുള്ള വിവരങ്ങൾ."
+      },
+      "keywords": "library learn understand autism ADHD epilepsy cerebral palsy down syndrome speech delay dyslexia resources videos ലൈബ്രറി അറിവ് ഓട്ടിസം",
+      "graph_node": "apps_web_src_views_library_libraryview",
+      "source_file": "apps/web/src/views/Library.tsx",
+      "source_location": "L20"
+    },
+    {
+      "id": "videos",
+      "view": "library",
+      "tab": "video",
+      "label": {
+        "en": "Learning videos",
+        "ml": "പഠന വീഡിയോകൾ"
+      },
+      "description": {
+        "en": "Find parent learning topics and video resources.",
+        "ml": "രക്ഷിതാക്കൾക്കുള്ള വിഷയങ്ങളും വീഡിയോ സ്രോതസ്സുകളും."
+      },
+      "keywords": "video watch youtube play learn വീഡിയോ",
+      "graph_node": "apps_web_src_views_library_libraryview",
+      "source_file": "apps/web/src/views/Library.tsx",
+      "source_location": "L20"
+    },
+    {
+      "id": "articles",
+      "view": "library",
+      "tab": "article",
+      "label": {
+        "en": "Read articles",
+        "ml": "ലേഖനങ്ങൾ വായിക്കുക"
+      },
+      "description": {
+        "en": "Read available educational articles.",
+        "ml": "ലഭ്യമായ വിദ്യാഭ്യാസ ലേഖനങ്ങൾ വായിക്കുക."
+      },
+      "keywords": "article read reading education ലേഖനം വായിക്കുക",
+      "graph_node": "apps_web_src_views_library_libraryview",
+      "source_file": "apps/web/src/views/Library.tsx",
+      "source_location": "L20"
+    },
+    {
+      "id": "support",
+      "view": "library",
+      "tab": "resources",
+      "label": {
+        "en": "Local support",
+        "ml": "പ്രാദേശിക പിന്തുണ"
+      },
+      "description": {
+        "en": "Find listed local support resources.",
+        "ml": "പട്ടികപ്പെടുത്തിയ പ്രാദേശിക സഹായ സ്രോതസ്സുകൾ."
+      },
+      "keywords": "local support centre center nearby help resource പിന്തുണ സമീപം കേന്ദ്രം",
+      "graph_node": "apps_web_src_views_library_libraryview",
+      "source_file": "apps/web/src/views/Library.tsx",
+      "source_location": "L20"
+    },
+    {
+      "id": "records",
+      "view": "records",
+      "tab": "records",
+      "label": {
+        "en": "Health records",
+        "ml": "ആരോഗ്യ രേഖകൾ"
+      },
+      "description": {
+        "en": "Review authorized consultation and medical records.",
+        "ml": "അനുമതിയുള്ള കൂടിക്കാഴ്ചാ രേഖകളും ആരോഗ്യ രേഖകളും."
+      },
+      "keywords": "medical health record consultation prescription diagnosis history രേഖ ആരോഗ്യ",
+      "graph_node": "apps_web_src_views_records_recordsview",
+      "source_file": "apps/web/src/views/Records.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "health",
+      "view": "records",
+      "tab": "health",
+      "label": {
+        "en": "Growth and vaccinations",
+        "ml": "വളർച്ചയും വാക്സിനേഷനും"
+      },
+      "description": {
+        "en": "View recorded growth measurements and vaccinations.",
+        "ml": "രേഖപ്പെടുത്തിയ വളർച്ചാ അളവുകളും വാക്സിനേഷനും."
+      },
+      "keywords": "height weight growth vaccine vaccination immunization അളവ് ഭാരം ഉയരം വാക്സിൻ",
+      "graph_node": "apps_web_src_views_records_recordsview",
+      "source_file": "apps/web/src/views/Records.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "files",
+      "view": "records",
+      "tab": "files",
+      "label": {
+        "en": "Uploaded files",
+        "ml": "അപ്‌ലോഡ് ചെയ്ത ഫയലുകൾ"
+      },
+      "description": {
+        "en": "Find uploaded documents or add a file.",
+        "ml": "അപ്‌ലോഡ് ചെയ്ത രേഖകൾ കണ്ടെത്തുകയോ ഫയൽ ചേർക്കുകയോ ചെയ്യുക."
+      },
+      "keywords": "upload file document attachment PDF scan ഫയൽ രേഖ അപ്‌ലോഡ്",
+      "graph_node": "apps_web_src_views_records_recordsview",
+      "source_file": "apps/web/src/views/Records.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "sharing",
+      "view": "records",
+      "tab": "sharing",
+      "label": {
+        "en": "Sharing permissions",
+        "ml": "പങ്കിടൽ അനുമതികൾ"
+      },
+      "description": {
+        "en": "Manage who can access a child’s records and review access history.",
+        "ml": "കുട്ടിയുടെ രേഖകൾ ആരുമായി പങ്കിടുന്നു എന്ന് നിയന്ത്രിക്കുക."
+      },
+      "keywords": "share permission consent access grant revoke privacy sharing doctor അനുമതി പങ്കിടൽ",
+      "graph_node": "apps_web_src_views_records_recordsview",
+      "source_file": "apps/web/src/views/Records.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "account",
+      "view": "account",
+      "tab": "",
+      "label": {
+        "en": "Family profiles",
+        "ml": "കുടുംബ പ്രൊഫൈലുകൾ"
+      },
+      "description": {
+        "en": "Add or edit a child profile and manage your account.",
+        "ml": "കുട്ടിയുടെ പ്രൊഫൈൽ ചേർക്കുകയും അക്കൗണ്ട് ക്രമീകരിക്കുകയും ചെയ്യുക."
+      },
+      "keywords": "account profile child baby add edit birthday birth name family guardian caregiver settings language പ്രൊഫൈൽ കുട്ടി ചേർക്കുക കുടുംബം",
+      "graph_node": "apps_web_src_views_account_accountview",
+      "source_file": "apps/web/src/views/Account.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "privacy",
+      "view": "account",
+      "tab": "",
+      "label": {
+        "en": "Privacy and support",
+        "ml": "സ്വകാര്യതയും സഹായവും"
+      },
+      "description": {
+        "en": "Find correction, export and deletion request tools in Account.",
+        "ml": "തിരുത്തൽ, കയറ്റുമതി, നീക്കംചെയ്യൽ അപേക്ഷാ സൗകര്യങ്ങൾ അക്കൗണ്ടിൽ."
+      },
+      "keywords": "delete data export correction privacy support request remove account സ്വകാര്യത നീക്കം",
+      "graph_node": "apps_web_src_views_account_accountview",
+      "source_file": "apps/web/src/views/Account.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "notifications",
+      "view": "notifications",
+      "tab": "",
+      "label": {
+        "en": "Notifications",
+        "ml": "അറിയിപ്പുകൾ"
+      },
+      "description": {
+        "en": "Read appointment reminders and care updates.",
+        "ml": "കൂടിക്കാഴ്ചാ ഓർമ്മപ്പെടുത്തലുകളും പരിചരണ അറിയിപ്പുകളും."
+      },
+      "keywords": "notification reminder alert bell അറിയിപ്പ് ഓർമ്മപ്പെടുത്തൽ",
+      "graph_node": "apps_web_src_views_notifications_notificationsview",
+      "source_file": "apps/web/src/views/Notifications.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "operations",
+      "view": "operations",
+      "tab": "",
+      "label": {
+        "en": "Operations",
+        "ml": "നിർവഹണം"
+      },
+      "description": {
+        "en": "Open authorized administration tools.",
+        "ml": "അനുമതിയുള്ള നിർവഹണ സൗകര്യങ്ങൾ തുറക്കുക."
+      },
+      "keywords": "operations admin management administrator നിർവഹണം",
+      "graph_node": "apps_web_src_views_operations_operationsview",
+      "source_file": "apps/web/src/views/Operations.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "operations-providers",
+      "view": "operations",
+      "tab": "providers",
+      "label": {
+        "en": "Provider reviews",
+        "ml": "വിദഗ്ധ അവലോകനം"
+      },
+      "description": {
+        "en": "Open the provider reviews workspace.",
+        "ml": "നിർവഹണ വിഭാഗം തുറക്കുക."
+      },
+      "keywords": "providers admin operations",
+      "graph_node": "apps_web_src_views_operations_operationsview",
+      "source_file": "apps/web/src/views/Operations.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "operations-content",
+      "view": "operations",
+      "tab": "content",
+      "label": {
+        "en": "Content reviews",
+        "ml": "ഉള്ളടക്ക അവലോകനം"
+      },
+      "description": {
+        "en": "Open the content reviews workspace.",
+        "ml": "നിർവഹണ വിഭാഗം തുറക്കുക."
+      },
+      "keywords": "content admin operations",
+      "graph_node": "apps_web_src_views_operations_operationsview",
+      "source_file": "apps/web/src/views/Operations.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "operations-resources",
+      "view": "operations",
+      "tab": "resources",
+      "label": {
+        "en": "Resource reviews",
+        "ml": "സ്രോതസ്സ് അവലോകനം"
+      },
+      "description": {
+        "en": "Open the resource reviews workspace.",
+        "ml": "നിർവഹണ വിഭാഗം തുറക്കുക."
+      },
+      "keywords": "resources admin operations",
+      "graph_node": "apps_web_src_views_operations_operationsview",
+      "source_file": "apps/web/src/views/Operations.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "operations-finance",
+      "view": "operations",
+      "tab": "finance",
+      "label": {
+        "en": "Finance operations",
+        "ml": "സാമ്പത്തിക നിർവഹണം"
+      },
+      "description": {
+        "en": "Open the finance operations workspace.",
+        "ml": "നിർവഹണ വിഭാഗം തുറക്കുക."
+      },
+      "keywords": "finance admin operations",
+      "graph_node": "apps_web_src_views_operations_operationsview",
+      "source_file": "apps/web/src/views/Operations.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "operations-privacy",
+      "view": "operations",
+      "tab": "privacy",
+      "label": {
+        "en": "Privacy operations",
+        "ml": "സ്വകാര്യതാ നിർവഹണം"
+      },
+      "description": {
+        "en": "Open the privacy operations workspace.",
+        "ml": "നിർവഹണ വിഭാഗം തുറക്കുക."
+      },
+      "keywords": "privacy admin operations",
+      "graph_node": "apps_web_src_views_operations_operationsview",
+      "source_file": "apps/web/src/views/Operations.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "operations-queues",
+      "view": "operations",
+      "tab": "queues",
+      "label": {
+        "en": "Operations queues",
+        "ml": "നിർവഹണ ക്യൂകൾ"
+      },
+      "description": {
+        "en": "Open the operations queues workspace.",
+        "ml": "നിർവഹണ വിഭാഗം തുറക്കുക."
+      },
+      "keywords": "queues admin operations",
+      "graph_node": "apps_web_src_views_operations_operationsview",
+      "source_file": "apps/web/src/views/Operations.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "operations-readiness",
+      "view": "operations",
+      "tab": "readiness",
+      "label": {
+        "en": "Service readiness",
+        "ml": "സേവന സജ്ജത"
+      },
+      "description": {
+        "en": "Open the service readiness workspace.",
+        "ml": "നിർവഹണ വിഭാഗം തുറക്കുക."
+      },
+      "keywords": "readiness admin operations",
+      "graph_node": "apps_web_src_views_operations_operationsview",
+      "source_file": "apps/web/src/views/Operations.tsx",
+      "source_location": "L9"
+    }
+  ]
+}

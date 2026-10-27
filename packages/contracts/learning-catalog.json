@@ -1,0 +1,204 @@
+{
+  "version": 3,
+  "resources": [
+    {
+      "catalogId": "early-brain-development",
+      "title": "Early brain development",
+      "summary": "Responsive interactions and play can support early learning. Explore Building Babies’ Brains Through Play.",
+      "sourceLabel": "Harvard / UNICEF",
+      "kind": "video",
+      "sourceUrl": "https://www.youtube.com/watch?v=fpiYNkkNmEo",
+      "audience": "Parents and caregivers",
+      "review": {
+        "status": "awaiting_editorial_clinical_review",
+        "reviewer": null,
+        "published": false
+      },
+      "accessibility": {
+        "captions": "unverified",
+        "textAlternative": "not_published"
+      },
+      "availability": "unknown",
+      "youtubeId": "fpiYNkkNmEo"
+    },
+    {
+      "catalogId": "autism",
+      "title": "Autism spectrum disorder (ASD)",
+      "summary": "An introduction to autism, early signs, assessment and support.",
+      "sourceLabel": "Ummeed / Developmental Disabilities India",
+      "kind": "video",
+      "sourceUrl": "https://www.youtube.com/watch?v=NXIixu-a4X8",
+      "audience": "Parents and caregivers",
+      "review": {
+        "status": "awaiting_editorial_clinical_review",
+        "reviewer": null,
+        "published": false
+      },
+      "accessibility": {
+        "captions": "unverified",
+        "textAlternative": "not_published"
+      },
+      "availability": "unknown",
+      "youtubeId": "NXIixu-a4X8"
+    },
+    {
+      "catalogId": "adhd",
+      "title": "Attention-deficit/hyperactivity disorder (ADHD)",
+      "summary": "Learn about attention, impulsivity, hyperactivity and support for children.",
+      "sourceLabel": "Understood",
+      "kind": "video",
+      "sourceUrl": "https://www.youtube.com/watch?v=ouZrZa5pLXk",
+      "audience": "Parents and caregivers",
+      "review": {
+        "status": "awaiting_editorial_clinical_review",
+        "reviewer": null,
+        "published": false
+      },
+      "accessibility": {
+        "captions": "unverified",
+        "textAlternative": "not_published"
+      },
+      "availability": "unknown",
+      "youtubeId": "ouZrZa5pLXk"
+    },
+    {
+      "catalogId": "epilepsy",
+      "title": "Epilepsy and seizures in children",
+      "summary": "An introduction to seizures and seizure first aid for parents and caregivers.",
+      "sourceLabel": "Epilepsy Foundation",
+      "kind": "video",
+      "sourceUrl": "https://www.youtube.com/watch?v=z6K8XQQf9ss",
+      "audience": "Parents and caregivers",
+      "review": {
+        "status": "awaiting_editorial_clinical_review",
+        "reviewer": null,
+        "published": false
+      },
+      "accessibility": {
+        "captions": "unverified",
+        "textAlternative": "not_published"
+      },
+      "availability": "unknown",
+      "youtubeId": "z6K8XQQf9ss"
+    },
+    {
+      "catalogId": "cerebral-palsy",
+      "title": "Cerebral palsy",
+      "summary": "Cerebral Palsy: The Basics — an introduction to movement, posture and everyday activities.",
+      "sourceLabel": "Nemours KidsHealth",
+      "kind": "video",
+      "sourceUrl": "https://www.youtube.com/watch?v=MlhgsM1Sbck",
+      "audience": "Parents and caregivers",
+      "review": {
+        "status": "awaiting_editorial_clinical_review",
+        "reviewer": null,
+        "published": false
+      },
+      "accessibility": {
+        "captions": "unverified",
+        "textAlternative": "not_published"
+      },
+      "availability": "unknown",
+      "youtubeId": "MlhgsM1Sbck"
+    },
+    {
+      "catalogId": "developmental-delay",
+      "title": "Global developmental delay",
+      "summary": "Understand delays across developmental areas, professional evaluation and early support.",
+      "sourceLabel": "NISH",
+      "kind": "video",
+      "sourceUrl": "https://www.youtube.com/watch?v=xi3ZwUGJO14",
+      "audience": "Parents and caregivers",
+      "review": {
+        "status": "awaiting_editorial_clinical_review",
+        "reviewer": null,
+        "published": false
+      },
+      "accessibility": {
+        "captions": "unverified",
+        "textAlternative": "not_published"
+      },
+      "availability": "unknown",
+      "youtubeId": "xi3ZwUGJO14"
+    },
+    {
+      "catalogId": "down-syndrome",
+      "title": "Down syndrome",
+      "summary": "Learn about developmental needs and support for children with Down syndrome.",
+      "sourceLabel": "Ummeed / Developmental Disabilities India",
+      "kind": "video",
+      "sourceUrl": "https://www.youtube.com/watch?v=fDUHj4Fxyxc",
+      "audience": "Parents and caregivers",
+      "review": {
+        "status": "awaiting_editorial_clinical_review",
+        "reviewer": null,
+        "published": false
+      },
+      "accessibility": {
+        "captions": "unverified",
+        "textAlternative": "not_published"
+      },
+      "availability": "unknown",
+      "youtubeId": "fDUHj4Fxyxc"
+    },
+    {
+      "catalogId": "speech-language",
+      "title": "Speech and language delay",
+      "summary": "Explore communication milestones, communication difficulties and speech-language support.",
+      "sourceLabel": "Kauvery Hospital",
+      "kind": "video",
+      "sourceUrl": "https://www.youtube.com/watch?v=UIh33mLI1fY",
+      "audience": "Parents and caregivers",
+      "review": {
+        "status": "awaiting_editorial_clinical_review",
+        "reviewer": null,
+        "published": false
+      },
+      "accessibility": {
+        "captions": "unverified",
+        "textAlternative": "not_published"
+      },
+      "availability": "unknown",
+      "youtubeId": "UIh33mLI1fY"
+    },
+    {
+      "catalogId": "learning-differences",
+      "title": "Learning disabilities and dyslexia",
+      "summary": "Understand learning differences, assessment and individualized educational support.",
+      "sourceLabel": "TED-Ed",
+      "kind": "video",
+      "sourceUrl": "https://www.youtube.com/watch?v=zafiGBrFkRM",
+      "audience": "Parents and caregivers",
+      "review": {
+        "status": "awaiting_editorial_clinical_review",
+        "reviewer": null,
+        "published": false
+      },
+      "accessibility": {
+        "captions": "unverified",
+        "textAlternative": "not_published"
+      },
+      "availability": "unknown",
+      "youtubeId": "zafiGBrFkRM"
+    },
+    {
+      "catalogId": "milestones",
+      "title": "Developmental milestones and early warning signs",
+      "summary": "Learn the Signs. Act Early. videos for families monitoring development from birth to five years.",
+      "sourceLabel": "Centers for Disease Control and Prevention",
+      "kind": "collection",
+      "sourceUrl": "https://www.cdc.gov/act-early/resources/videos.html",
+      "audience": "Parents and caregivers",
+      "review": {
+        "status": "awaiting_editorial_clinical_review",
+        "reviewer": null,
+        "published": false
+      },
+      "accessibility": {
+        "captions": "unverified",
+        "textAlternative": "not_published"
+      },
+      "availability": "unknown"
+    }
+  ]
+}

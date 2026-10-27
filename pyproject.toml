@@ -1,0 +1,26 @@
+# Lint configuration only. The services are deployed independently and keep their
+# own requirements; this exists so CI can run one error-level check across them.
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+extend-exclude = [".venv", "migrations", "node_modules"]
+
+[tool.ruff.format]
+# The services were written one-statement-per-line with lines up to 376 characters.
+# A formatter is the only durable fix: it removes the whole class of review friction
+# instead of relying on everyone re-wrapping by hand.
+docstring-code-format = true
+
+[tool.ruff.lint]
+# Correctness rules, not style: `ruff format` owns layout, so whitespace rules stay off
+# and this list stays focused on things that are actually defects.
+select = ["E9", "F", "B", "S102", "S105", "S106", "S108", "S301", "S324", "S501", "S506", "S602", "S605", "S608"]
+ignore = ["B008"]  # FastAPI states dependencies as argument defaults.
+
+[tool.ruff.lint.per-file-ignores]
+# Local developer checks, not deployed code: the "password" is a negative test that the
+# public password grant stays disabled, and the "SQL" is a fixed introspection string.
+"scripts/*.py" = ["S105", "S106", "S608"]
+"**/tests/*" = ["S105", "S106"]
+"services/core/api/test_*.py" = ["S105", "S106"]
+"services/core/api/tests.py" = ["S105", "S106"]

@@ -1,0 +1,16 @@
+.journey-dashboard {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+}
+.journey-dashboard > * { min-width: 0; scroll-margin-top: 110px; }
+.journey-observations { grid-column: 1 / -1; }
+.journey-dashboard .card { margin: 0; }
+.journey-dashboard .section-head, .journey-dashboard .list-row { flex-wrap: wrap; gap: 16px; }
+.journey-dashboard .list-row .grow { min-width: 0; overflow-wrap: anywhere; }
+.journey-screening .info-banner { margin: 0 0 20px; }
+.journey-dashboard .empty { padding: 28px 16px; }
+@media (max-width: 1000px) {
+  .journey-dashboard { grid-template-columns: minmax(0, 1fr); }
+}

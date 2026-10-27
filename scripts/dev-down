@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+export DOCKER_CONTEXT="${DOCKER_CONTEXT:-colima-neuronest}"
+# Stops services; intentionally preserves all named volumes and patient test records.
+if docker compose version >/dev/null 2>&1; then docker compose stop; else docker-compose stop; fi

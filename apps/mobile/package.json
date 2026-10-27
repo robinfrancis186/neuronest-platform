@@ -1,0 +1,55 @@
+{
+  "name": "@neuronest/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "prebuild": "expo prebuild",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "export": "expo export --platform all --max-workers 2"
+  },
+  "dependencies": {
+    "@config-plugins/react-native-webrtc": "^14.0.0",
+    "@livekit/react-native": "^2.12.0",
+    "@livekit/react-native-expo-plugin": "^1.0.2",
+    "@livekit/react-native-webrtc": "^144.1.2",
+    "expo": "~55.0.0",
+    "expo-build-properties": "~55.0.18",
+    "expo-crypto": "~55.0.19",
+    "expo-dev-client": "~55.0.40",
+    "expo-document-picker": "~55.0.17",
+    "expo-file-system": "~55.0.26",
+    "expo-notifications": "~55.0.27",
+    "expo-secure-store": "~55.0.18",
+    "expo-sharing": "~55.0.24",
+    "expo-system-ui": "~55.0.12",
+    "expo-web-browser": "~55.0.20",
+    "firebase": "^12.18.0",
+    "livekit-client": "^2.22.3",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-native": "0.83.10",
+    "react-native-razorpay": "^3.0.0",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "@types/react-native-razorpay": "^2.2.6",
+    "tsx": "^4.20.6",
+    "typescript": "~5.9.2"
+  },
+  "overrides": {
+    "@firebase/firestore": {
+      "@grpc/grpc-js": "1.13.6"
+    },
+    "xcode": {
+      "uuid": "11.1.1"
+    }
+  }
+}

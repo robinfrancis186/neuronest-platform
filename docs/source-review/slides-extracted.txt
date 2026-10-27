@@ -1,0 +1,67 @@
+## Slide 1
+NeuroNest
+Smart Child Development Platform
+Adhen C Tom
+Aleena Niju
+Almia Rose Paul
+Anatt Biju
+Group 5
+
+## Slide 2
+AI-assisted child development platform for continuous monitoring from birth.
+Centralized digital health records including milestones, vaccinations, growth, therapy, and EHR.
+AI + validated screening tools to detect developmental delays and possible early signs of Autism Spectrum Disorder (ASD).
+Teleconsultation with pediatricians and developmental specialists.
+Parent support through educational resources and therapy management.
+Access to verified child development centers, schools, and government schemes.
+Promotes early detection, timely intervention, and better developmental outcomes.
+Abstract
+
+## Slide 3
+Developmental delays often go unnoticed during early childhood.
+Parents lack awareness of developmental milestones.
+Medical records are scattered across hospitals.
+Finding specialists and therapy centers is difficult.
+Government welfare schemes are not easily accessible.
+Delayed intervention can affect long-term developmental outcomes.
+Problem Statement
+
+## Slide 4
+Monitor child development through age-specific milestones, growth, and vaccination tracking.
+ Objectives
+Enable AI-assisted early screening to identify potential developmental concerns and encourage timely intervention.
+Maintain secure Electronic Health Records (EHR) for seamless sharing with authorized healthcare professionals.
+Connect parents with specialists, educational resources, and government support schemes through a unified platform.
+
+## Slide 5
+Fragmented Child Healthcare:
+ Parents rely on paper records, separate hospital portals, vaccination apps, and manual developmental assessments, making it difficult to maintain a complete child health history.
+Limited Access to Support:
+ Finding specialists, therapy centers, government schemes, and parent education resources is challenging due to the lack of a centralized platform.
+Existing System
+
+## Slide 6
+Proposed Solution
+
+## Slide 7
+Backend
+User Authentication & Role Management
+Electronic Health Records (EHR) Management
+API Services & Database Integration
+Software Implementation
+Frontend
+Parent Dashboard (Web/Mobile)
+Child Profile & Milestone Tracking
+Appointment & Notification Interface
+AI Module
+Developmental Milestone Analysis
+AI-Assisted Early Screening
+Risk Assessment & Personalized Recommendations
+
+## Slide 8
+Provides a centralized platform for monitoring child development from birth.
+Enables AI-assisted early screening to support timely identification of developmental concerns.
+Maintains secure Electronic Health Records (EHR) for seamless healthcare management.
+Connects parents with specialists, therapy centers, educational institutions, and government schemes.
+Promotes parent awareness, early intervention, and improved developmental outcomes for children.
+Conclusion

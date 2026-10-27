@@ -1,0 +1,3 @@
+# Offline training only; no new production dependencies.
+numpy==2.5.4
+scikit-learn==1.9.1
